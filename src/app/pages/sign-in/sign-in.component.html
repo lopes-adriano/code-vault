@@ -1,0 +1,49 @@
+<div class="min-h-screen flex flex-col">
+  <header>
+    <app-header></app-header>
+  </header>
+  <main class="flex-1 flex items-center justify-center" [@fadeIn]="fadeIn">
+    <div class="hero bg-base-200 max-w-fit rounded-xl">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="text-center lg:text-left px-8">
+          <h1 class="text-5xl font-bold">Entrar</h1>
+          <p class="py-6">Acesse sua conta e explore o CodeVault.</p>
+        </div>
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="Digite seu email"
+                class="input input-bordered"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Senha</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                class="input input-bordered"
+                required
+              />
+              <label class="label">
+                <a routerLink="/sign-up" class="label-text-alt link link-hover"
+                  >Não possui uma conta? Cadastre-se</a
+                >
+              </label>
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary" routerLink="/home">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

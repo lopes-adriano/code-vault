@@ -1,0 +1,63 @@
+<div class="min-h-screen flex flex-col">
+  <header>
+    <app-header></app-header>
+  </header>
+  <main class="flex-1 flex items-center justify-center">
+    <div class="hero bg-base-200 max-w-fit rounded-xl" [@fadeIn]="fadeIn">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="text-center lg:text-left px-8">
+          <h1 class="text-5xl font-bold">Crie sua conta</h1>
+          <p class="py-6">
+            Crie sua conta para explorar, criar e compartilhar snippets de
+            código.
+          </p>
+        </div>
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Usuário</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Digite seu nome de usuário"
+                class="input input-bordered"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="Digite seu email"
+                class="input input-bordered"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Senha</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                class="input input-bordered"
+                required
+              />
+            </div>
+            <label class="label">
+              <a routerLink="/sign-in" class="label-text-alt link link-hover"
+                >Ja possui uma conta? Entrar</a
+              >
+            </label>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

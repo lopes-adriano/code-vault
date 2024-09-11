@@ -1,0 +1,13 @@
+<div id="typewriter">
+  <h1
+    id="typewriter"
+    class="{{ textStyle }}"
+  >
+    {{ displayText }}
+    <span
+      class="cursor {{textStyle}}"
+      [class.blink]="typingComplete"
+      >|</span
+    >
+  </h1>
+</div>

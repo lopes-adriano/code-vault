@@ -1,0 +1,29 @@
+<div class="min-h-screen flex flex-col">
+  <header>
+    <app-header></app-header>
+  </header>
+  <main class="flex-1 flex items-center justify-center">
+    <div class="hero-content flex-col lg:flex-row-reverse" [@zoomIn]="zoomIn">
+      <div class="mockup-code ml-4">
+        <pre data-prefix="1"><code></code>const codeVault = () => {{'{'}}</pre>
+        <pre data-prefix="2"><code>  console.log('Hello, world!');</code></pre>
+        <pre data-prefix="3"><code>{{'}'}}</code></pre>
+      </div>
+
+      <div>
+        <app-typewriter
+          [text]="'Bem-vindo ao CodeVault'"
+          [textStyle]="typewriterStyle"
+        ></app-typewriter>
+
+        <p #typewriter class="py-6 max-w-sm text-justify">
+          O CodeVault é uma plataforma onde você pode criar e compartilhar
+          snippets de código em diversas linguagens. Crie, compartilhe e
+          descubra novos códigos com a comunidade.
+        </p>
+
+        <button class="btn btn-primary" routerLink="/sign-in">Explorar</button>
+      </div>
+    </div>
+  </main>
+</div>

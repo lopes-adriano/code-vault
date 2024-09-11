@@ -1,0 +1,20 @@
+@if (isBrowser) {
+<div
+  class="mockup-window flex border-2 border-base-300 rounded-box min-w-[800px]"
+>
+  <div class="px-4 py-2 border-b border-base-300">
+    <select class="select" (change)="changeLanguage($event)">
+      @for(language of languages; track language) {
+      <option value="{{ language.value }}">{{ language.name }}</option>
+      }
+    </select>
+  </div>
+  <div class="p-4">
+    <ngx-monaco-editor
+      style="height: 400px"
+      [options]="editorOptions"
+      [(ngModel)]="code"
+    ></ngx-monaco-editor>
+  </div>
+</div>
+}
