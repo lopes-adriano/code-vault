@@ -7,10 +7,11 @@ CodeVault é um sistema onde usuários podem encontrar, criar e compartilhar sni
 
 Projeto em desenvolvimento feito com Angular e Typescript utilizando DaisyUI.
 
-<div style="display: flex; flex-direction: column; align-items: center;">
+<div>
   <p align="center">
     <img src="src/assets/images/codevault.gif" width="600" />
-  </p>
+  
   <img src="src/assets/images/codevault-signin.png" width="500" />
   <img src="src/assets/images/codevault-signup.png" width="500" />
+  </p>
 </div>
