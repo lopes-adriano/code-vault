@@ -1,62 +1,61 @@
-<div class="flex flex-col min-h-screen">
-  <div class="flex items-center justify-center">
-    <h1
-      class="text-4xl font-bold mt-8 bg-gradient-to-r from-[#1EB854] to-[#1DB8AB] bg-clip-text text-transparent"
-    >
-      Crie seu snippet
-    </h1>
-  </div>
-  <div class="flex flex-1 items-center justify-center">
-    <div class="hero-content flex-col lg:flex-row">
-      <div class="text-center lg:text-left px-8">
-        <app-code-editor></app-code-editor>
-      </div>
-      <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-        <div class="card-body">
-          <form>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Título</span>
-              </label>
-              <input
-                type="text"
-                placeholder="Digite o título do snippet"
-                class="input input-bordered"
-              />
-            </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Descrição</span>
-              </label>
-              <textarea
-                placeholder="Adicione uma descrição para o snippet"
-                class="textarea textarea-bordered"
-              ></textarea>
-            </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Tags</span>
-              </label>
-              <input
-                type="text"
-                placeholder="Digite as tags separadas por vírgula"
-                class="input input-bordered"
-              />
-            </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Visibilidade</span>
-              </label>
-              <select class="select select-bordered">
-                <option value="true">Público</option>
-                <option value="false">Privado</option>
-              </select>
-            </div>
-            <div class="form-control mt-6">
-              <button class="btn btn-primary">Criar</button>
-            </div>
-          </form>
-        </div>
+<div class="p-8 w-full">
+  <h1
+    class="text-2xl text-center font-bold bg-gradient-to-t from-[#1EB854] to-[#1DB8AB] bg-clip-text text-transparent"
+  >
+    Crie seu snippet de código
+  </h1>
+</div>
+
+<div class="flex flex-1 items-center justify-center">
+  <div class="hero-content flex-col lg:flex-row w-full">
+    <div class="text-center lg:text-left px-8">
+      <app-code-editor></app-code-editor>
+    </div>
+
+    <div class="card flex-shrink-0 w-full max-w-sm shadow-xl bg-base-100">
+      <div class="card-body">
+        <form>
+          <div class="form-control">
+            <label for="title">Título</label>
+            <input
+              id="title"
+              type="text"
+              placeholder="Digite o título do snippet"
+              class="input input-bordered"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="description">Descrição</label>
+            <textarea
+              id="description"
+              placeholder="Descreva o snippet"
+              class="textarea textarea-bordered"
+            ></textarea>
+          </div>
+
+          <div class="form-control">
+            <label for="tags">Tags</label>
+            <input
+              id="tags"
+              type="text"
+              placeholder="Digite as tags separadas por vírgula"
+              class="input input-bordered"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="visibility">Visibilidade</label>
+            <select id="visibility" class="select select-bordered">
+              <option value="true">Público</option>
+              <option value="false">Privado</option>
+            </select>
+          </div>
+
+          <div class="form-control mt-6">
+            <button class="btn btn-primary">Criar</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

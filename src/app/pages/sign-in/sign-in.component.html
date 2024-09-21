@@ -12,10 +12,11 @@
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg">
           <form class="card-body">
             <div class="form-control">
-              <label class="label">
+              <label class="label" for="email">
                 <span class="label-text">Email</span>
               </label>
               <input
+                id="email"
                 type="email"
                 placeholder="Digite seu email"
                 class="input input-bordered"
@@ -23,16 +24,17 @@
               />
             </div>
             <div class="form-control">
-              <label class="label">
+              <label class="label" for="password">
                 <span class="label-text">Senha</span>
               </label>
               <input
+                id="password"
                 type="password"
                 placeholder="Digite sua senha"
                 class="input input-bordered"
                 required
               />
-              <label class="label">
+              <label class="label" for="">
                 <a routerLink="/sign-up" class="label-text-alt link link-hover"
                   >Não possui uma conta? Cadastre-se</a
                 >
